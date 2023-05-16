@@ -1,0 +1,579 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sahitya', serif;
+    list-style: none;
+}
+h2 {
+    text-align: center;
+}
+
+.negrita {
+    font-weight:bold;
+}
+.bodyprincipal {
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/images/caffe.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.headerprincipal {
+    width: 100%;
+    padding: 1.5em 1em 1em 5em;
+    background-color: rgba(255, 255, 255, 0);
+    
+}
+.titulo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 6em;
+    padding-left: .5em;
+}
+.titulo a {
+    font-family: 'Dancing Script', cursive;
+}
+
+.navprincipal ul{
+    width: fit-content;
+    padding: 1em;
+    margin: 3em 3em 3em 6em ;
+    font-size: 2em;
+    list-style: none;
+    line-height: 2em;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    
+}
+.footerprincipal {
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    width: 100%;
+    padding: 0.5em;
+    background-color:rgba(0, 0, 0, 0.24);
+    justify-content: flex-end;
+    color: black;
+}
+
+.headergeneral {
+    background-color: rgba(255, 244, 141, 1);
+    padding: 1rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.navgeneral ul {
+    display: flex;
+    gap: 2em;
+    font-size: 1.25em;
+    list-style: none;
+}
+.general {
+    font-size: 5em;
+}
+.footergeneral {
+    font-family: 'Dancing Script', cursive;
+    background-color:rgba(255, 242, 121, 0.59);
+    padding: 0.5em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*NOSOTROS*/
+
+.nosotros {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    margin: 1em;
+}
+
+.nosotros p , img{
+    width: 90%;
+    margin: 1rem;
+    text-align: center;
+    word-spacing: 0.25em;
+    line-height: 1.7em;
+}
+/* MENU*/
+.menu {
+    padding: 2rem;
+    word-spacing: 0.25em;
+    line-height: 2.1em;
+    width: 100%;
+    height: min-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 0.5fr);
+    grid-template-areas:    "desayuno     desayuno     cafe"
+                            "desayuno     desayuno     cafe"
+                            "almuerzo     almuerzo     almuerzo"
+                            "almuerzo     almuerzo     almuerzo"
+                            "postreypaste postreypaste brunch"
+                            "postreypaste postreypaste cajarosa";
+    gap: 2rem
+
+}
+.desayuno {
+    padding: 3rem;
+    grid-area: desayuno;
+}
+.cafe {
+    grid-area: cafe;
+    justify-self: center;
+}
+.almuerzo {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: almuerzo;
+}
+.almuerzos {
+    margin-top: 2em;
+}
+.enamarillo {
+    padding: 1rem;
+    text-align: center;
+    background-color: rgba(255, 244, 141, 1) ;
+}
+.brunch {
+    background-color:  rgba(255, 244, 141, 1);
+    padding: 1rem;
+    width: 30em;
+    grid-area: brunch;
+    text-align: justify;
+
+}
+
+.postreypaste {
+    padding: 3rem;
+    grid-area: postreypaste;
+}
+.cajarosa {
+    background-color: rgba(255, 195, 231, 1);
+    width: 30em;
+    height: 10em;
+    padding: 1rem;
+    padding-top: 2.1em;
+    text-align: center;
+    grid-area: cajarosa;
+}
+
+/*SIN TACC*/ 
+.sintaccpag {
+    margin: 5em;
+    display:flex;
+    flex-direction: column;
+}
+.sintaccpag h2 {
+    text-align: center;
+}
+.stcomidaypaste {
+    margin: 3em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    word-spacing: 0.2em;
+    line-height: 2.1em;
+}
+.stpasteleria {
+    background-color: rgba(255, 195, 231, 1);
+    padding: 1em;
+    width: 30%;
+    
+}
+/*REGALOS  */
+.regalos {
+    margin:4%;
+    display: flex;
+    justify-content: space-around;
+    line-height: 2.1em;
+
+}
+.regalos1 {
+    width: 40%;
+}
+.regalos1 li, h2{
+    margin-bottom: 1.5em;
+}
+.regalos2 h2{
+text-align: center;
+}
+.regalos2B {
+    margin-top: 1.5em;
+}
+
+/* CONTACTO */
+.contacto {
+    background-color: transparent;
+    padding: 3em;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+}
+.contacto1 {
+    margin: 2em;
+    background-color: rgba(61, 22, 0, 0.459);
+    width: 30%;
+
+    border-radius: 1em;
+}
+.contacto1 form {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    line-height: 2.1em;
+    letter-spacing: 0.1em;
+    color: white;
+}
+.mensaje {
+    width: 75%;
+    height: 10em;
+}
+.enviar {
+    margin-top: 1em;
+    width: 75%;
+}
+.contacto2 {
+    width: 35%;
+    padding: 1em;
+    background-color: rgba(131, 131, 131, 0.493);
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 2.1em;
+}
+iframe {
+    max-width: fit-content;
+    border-radius: 1em;
+}
+.transparente {
+    background-color: rgba(77, 77, 77, 0.493);
+}
+
+
+/*MEDIAS QUERYS para Ipad mini*/
+
+@media(max-width: 970px) {
+    .bodyprincipal {
+        background-image: none;
+    }
+    .headerprincipal {
+        background-color:rgba(255, 153, 0, 0.39) ;
+    }
+    .titulo {
+        font-size: 4em;
+        text-align: left
+    }
+    .mainprincipal {
+        min-height: 61em;
+        background-image: url(../assets/images/background_brunch.jpeg);
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navprincipal {
+        width: min-content;
+    }
+    .navprincipal ul {
+        padding: 2rem;
+        width: fit-content;
+        background-color: rgba(255, 255, 255, 0.39);
+        border-radius: 0.5rem;
+        font-size: 2.5em;
+    }
+    .footerprincipal {
+        background-color:rgba(255, 153, 0, 0.39);
+        justify-content: center;
+    }
+    /*HEADER GENERAL*/
+    .headergeneral {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .navgeneral ul {
+        font-size: 1em;
+    }
+    .general {
+        font-size: 3em;
+    }
+    /*NOSOTROS*/
+    .nosotros {
+        min-height: 54em;
+        font-size: 1.3em;
+        margin: 0.5rem;
+        justify-content: space-around;
+    }
+    .nosotros p {
+        padding: 0.5rem;
+        
+    }
+    /*MENU*/
+    .menu {
+        padding: 1rem;
+        line-height: 1.7em;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6,0.5fr);
+        grid-template-areas:    "desayuno   cafe"
+                                "desayuno    cafe"
+                                "almuerzo     almuerzo "
+                                "almuerzo     almuerzo  "
+                                "postreypaste  brunch"
+                                "postreypaste  cajarosa";
+        gap: 1rem;
+        
+    }
+    .menu h2 {
+        font-size: 1.12em;
+    }
+    .desayuno {
+        padding-top: 2rem;
+        grid-area: desayuno;
+        align-self: center;
+    }
+    .cafe {
+        padding-top: 2rem;
+        grid-area: cafe;
+        justify-self: center;
+    }
+    .brunch {
+        padding: 1rem;
+        width: 20rem;
+        justify-self: center;
+    }
+    
+    .cajarosa {
+        width: 20rem;
+        padding: 1rem;
+        padding-top: 2.1em;
+        grid-area: cajarosa;
+        justify-self: center;
+    }
+    /*REGALOS*/
+    .regalos {
+        margin:4%;
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+        line-height: 2.1em;
+    
+    }
+    .regalos1 {
+        width: 40%;
+    }
+    .regalos2 {
+        align-self: center;
+    }
+    /* CONTACTO */
+.contacto {
+    min-height: 61em;
+    background-image: url(../assets/images/background_brunch.jpeg);
+    background-size: cover;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.2em;
+}
+.contacto1 {
+    padding: 2rem;
+    background-color: rgba(61, 22, 0, 0.459);
+    width: 80%;
+    height: fit-content;
+    border-radius: 1em;
+}
+.contacto1 form {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    line-height: 1.7em;
+    letter-spacing: 0.1em;
+    color: white;
+}
+.mensaje {
+    width: 75%;
+    height: 10em;
+}
+.enviar {
+    margin-top: 1em;
+    width: 75%;
+}
+.contacto2 {
+    width: 80%;
+    padding: 1rem;
+    background-color: rgba(131, 131, 131, 0.493);
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 2.1em;
+}
+iframe {
+    display: none;
+}
+.transparente {
+    background-color:rgba(255, 153, 0, 0.39)
+}
+}
+/*SIN TACC*/ 
+.sintaccpag {
+    min-height: 50rem;
+}
+.stcomidaypaste {
+    width: 80%;
+    margin: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.stpasteleria {
+    padding: 1em;
+    width: 75%;
+    
+}
+
+
+/*MEDIA QUERY para Iphone SE*/
+
+@media(max-width: 740px) {
+    /*PRINCIPAL*/
+    .titulo {
+        font-size: 3em;
+    }
+    .navprincipal ul {
+        padding: 0.2rem;
+        width: fit-content;
+        background-color: rgba(255, 255, 255, 0.39);
+        border-radius: 0.5rem;
+        font-size: 1.5em;
+    }
+    .mainprincipal {
+        min-height: 33rem;
+        background-image: url(../assets/images/background_brunch.jpeg);
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*HEADER GRAL*/
+    h2{
+        font-size: 1.12em;
+    }
+    .headergeneral {
+        padding: 0.5rem;
+        flex-direction: column;        
+    }
+    .navgeneral ul {
+        font-size: 1em;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    /*NOSOTROS*/
+    .nosotros {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        margin: 0.5rem;
+    }
+    
+    .nosotros p , img{
+        width: 90%;
+        margin: 0.5rem;
+        word-spacing: 0.25em;
+        line-height: 1.7em;
+    }
+    /*MENU*/
+    .menu {
+        padding:0.1rem;
+        line-height: 1.7em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 0.9em;
+}
+.cafe{
+    text-align: center;
+    padding-top: 1rem;
+}
+.cajarosa, .brunch {
+    width: 80%;
+    height: fit-content;
+}
+/*REGALOS*/
+.regalos {
+    padding:0.5rem;
+    width: 95%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    line-height: 1.5em;
+    gap:1rem;
+
+}
+.regalos1 {
+    padding: 0.5rem;
+    width: 85%;
+}
+.regalos1 li, h2{
+    margin-bottom: 1.5em;
+}
+.regalos2 {
+    width: 85%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.regalos2B {
+    text-align:left;
+}
+/*SIN TACC*/
+.sintaccpag {
+    margin: 2rem;
+}
+.sintaccpag h2 {
+    text-align: center;
+}
+.stcomidaypaste {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    word-spacing: 0.2em;
+    line-height: 2.1em;
+    gap: 1rem;
+}
+.stpasteleria {
+    background-color: rgba(255, 195, 231, 1);
+    padding: 1em;
+    width: 100%;
+    
+}
+    }
+    
