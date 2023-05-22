@@ -52,6 +52,10 @@ a{
     font-weight: bold;
     
 }
+a:hover {
+    color: rgb(78, 42, 21);
+
+    }
 .footerprincipal {
     font-family: 'Dancing Script', cursive;
     display: flex;
@@ -266,6 +270,13 @@ iframe {
 }
 
 
+/*BOOSTRAP*/
+.container {
+    margin: 2rem;
+}
+.row{
+    margin-bottom: 1.5rem;
+}
 /*MEDIAS QUERYS para Ipad mini*/
 
 @media(max-width: 970px) {
