@@ -1,0 +1,25 @@
+* {
+        font-family: 'Sahitya', serif;
+        list-style: none;
+        text-decoration: none;
+    a {
+        @include links
+    }
+}
+    .negrita {
+        font-weight: bold;
+    }
+    h2 {
+        text-align: center;
+    }
+    .titulo {
+        font-family: 'Dancing Script', cursive;
+        font-size: 6em;
+        a {
+            font-family: 'Dancing Script', cursive;
+        }
+    }
+    .general {
+        font-size: 5em;
+    }
+

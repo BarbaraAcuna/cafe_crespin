@@ -1,0 +1,29 @@
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@mixin flex-end1 {
+    display: flex;
+    justify-content: flex-end;
+}
+@mixin links {
+    list-style: none;
+    text-decoration: none;
+    color: $color_letras;
+    
+}
+
+@mixin flex_query {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin nosotros_query {
+    width: 90%;
+    margin: 0.5rem;
+}
+@mixin regalos_query {
+    width: 85%;
+    padding: 0.5rem;
+}

@@ -1,0 +1,56 @@
+/* HEADER y FOOTER INDEX y CONTACTO */
+.headerprincipal {
+    width: 100%;
+    padding: 1.5em 1em 1em 5em;
+    background-color: $color_transparente;
+    h1 {
+        padding-left: .5em;
+    }
+    
+}
+.footerprincipal {
+        width: 100%;
+        padding: 0.5em;
+        background-color: $color_transparente;
+        @include flex-end1;
+}
+
+/* HEADER y FOOTER General */
+.headergeneral {
+    background-color: $color_principal;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    h1 {
+        a {
+        @include links;
+        }
+    }
+    nav {
+        ul {
+            display: flex;
+            align-items:flex-end;
+            gap: 2em;
+            font-size: 1.25em;
+            li{
+                a {
+                    font-weight: bold;
+                    @include links
+                }
+            }
+        }
+    }
+}
+.footergeneral {
+    padding: 0.5em;
+    background-color: $color_footer;
+    @include flex-end1;
+    p {
+        @include links
+    }
+    
+
+}
+
