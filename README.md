@@ -1,13 +1,13 @@
-# Entrega Final del curso de Desarrollo web.
+# Entrega Final del curso de Desarrollo web-Coderhouse
 ## Cafe crespín
-Pagina web de una cafeteria de especialidad. En la misma se han aplicado CSS, SCSS, SEO y diseño Responsive.
+Pagina web de una cafeteria de especialidad. Se han aplicado CSS, SCSS, SEO y diseño Responsive.
 #### La misma cuenta con:
 ##### Index
 ##### Menu
 ##### Opciones de regalo
 ##### Descripción
 ##### Pagina de contacto
-La finalidad de la misma es que pueda ser utilizada mediante QR como un menú para prescindir de las cartas físicas.
+Su finalidad es que pueda ser utilizada mediante QR como un menú para prescindir de las cartas físicas.
 
 
 
