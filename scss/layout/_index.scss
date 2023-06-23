@@ -13,14 +13,16 @@
             ul {
                 width: fit-content;
                 padding: 1em;
-                margin: 3em 3em 3em 6em ;
+                margin: 3em 3em 6em 6em ;
                 font-size: 2em;
                 line-height: 2em;
-                a {
-                    color: $color_letras;
-                    font-weight: $negrita;
-                    &:hover {
-                        color:rgb(78, 42, 21);
+                li{
+                    a {
+                        color: $color_letras;
+                        font-weight: $negrita;
+                        &:hover {
+                            color:rgb(78, 42, 21);
+                        }
                     }
                 }
             }

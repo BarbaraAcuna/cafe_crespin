@@ -1,3 +1,66 @@
+@media(max-width: 64rem){
+    .nosotros {
+        min-height: 100vh;
+        font-size: 1.3em;
+        margin: 0.5rem;
+        padding-left: 5rem;
+        justify-content: space-around;
+        div{
+            p{
+            width: 80%
+            }
+        }
+        div {
+            img {
+                width: 80%;
+            }
+        }
+        
+    }
+    .contacto{
+        width: 100%;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2em;
+        .contacto1 {
+            width: 80%;
+            form{
+                p {
+                    text-align: center;
+                    font-size: 1.5em;
+                }
+                label{
+                    display: flex;
+                    flex-direction: column;
+                    line-height: 1.7em;
+                    letter-spacing: 0.1em;
+                    font-weight: normal;
+                }
+            input {
+                width: 80%;
+            }
+            }
+        }
+    .contacto2 {
+        width: 80%;
+        padding: 2rem;
+        margin: 2rem;
+        height: 30rem;
+        h2 {
+            width: 90%;
+        }
+        ul{
+            padding: 1rem;
+            width: 90%;
+        }
+        iframe {
+            width:80%;
+        }
+    }
+}
+}
+
 @media(max-width: 60rem) {
     .transparente {
         background-color: $cambio_transparente;
@@ -156,9 +219,30 @@
         }
     }
 }
-/*SIN TACC*/ 
 
-@media(max-width: 45rem) {
+@media (max-width:56.2rem)
+{
+    .menu {
+        padding:0.1rem;
+        line-height: 1.7em;
+        @include flex_query;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1em;
+        .cafe{
+            text-align: center;
+        }
+        .almuerzos {
+            width: 80%;
+        }
+        .cajarosa {
+            height: fit-content;
+            margin-bottom: 1rem;
+        }
+    }
+    
+}
+@media(max-width: 48rem) {
     h2{
         font-size: 1.12em;
     }
@@ -182,7 +266,7 @@
         @include flex_query;
         .navprincipal {
             ul {
-            padding: 0.3rem;
+            padding: 2rem;
             width: fit-content;
             background-color: rgba(255, 255, 255, 0.39);
             border-radius: 0.5rem;
@@ -239,7 +323,6 @@
         font-size: 0.9em;
         .cafe{
             text-align: center;
-            padding-top: 1rem;
         }
         .cajarosa {
             width: 80%;
@@ -253,15 +336,16 @@
     
     /*REGALOS*/
     .regalos {
+        margin: 1rem;
         padding:0.5rem;
         width: 95%;
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         line-height: 1.5em;
-        gap:1rem;}
+    }
     .regalos1 {
-        width: 100%;
+        margin: 0;
         display: flex;
         flex-direction: column;  
         align-items: center; 
@@ -270,13 +354,12 @@
             margin-bottom: 0.5rem;
             }
         ul{
-            width: 12rem;
             li {
             margin-bottom: 0.5rem;
+            width: 100%;
             }
         }
         }
-
         .regalos2 {
             @include nosotros_query;
             @include flex_query;
@@ -296,7 +379,9 @@
 .sintaccpag {
     margin: 2rem;
     h2 {
+        width: 80%;
         text-align: center;
+        align-self: center;
     }
     .stcomidaypaste {
         margin: 1rem;
@@ -305,13 +390,89 @@
         word-spacing: 0.2em;
         line-height: 2.1em;
         gap: 1rem;
+        .stcomida {
+            margin:2.5rem;
+        }
         .stpasteleria {
             background-color: $caja_rosa ;
             padding: 1em;
-            width: 100%;
+            width: fit-content;
         
         }
     }      
 }
     }
-
+@media (max-width:20rem) {
+    .bodyprincipal{
+        main{
+            nav {
+                width: 80%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                ul { 
+                    width: 100%;
+                    margin: 0;
+                    li{
+                    a {
+                        font-size: 0.8em;
+                        letter-spacing: normal;
+                    }
+                }
+                }
+            }  
+        }
+    }
+    .nosotros {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding-left: 0.2rem;
+        div {
+            padding: 0.25rem;
+            p {
+                width: 100%;
+                font-size: 0.7em;
+                text-align: justify;
+            }
+        }
+        div {
+            padding: 0.25rem;
+            img {
+                width: 100%;
+            }
+        }
+    }   
+    .contacto{
+        padding: 0.2rem;
+        font-size: 0.9em;
+        .contacto1 {
+            width: 80%;
+            form{
+                label{
+                    line-height: 1.5em;
+                }
+                input {
+                    width: 90%;
+                }
+            }
+        }
+        .contacto2 {
+            padding: 0.5rem;
+            width: 80%;
+            justify-content: space-evenly;
+            height: fit-content;
+            h2 {
+                width: 90%;
+            }
+            ul{
+                width: 90%;
+            }
+            iframe{
+                display: none;
+            }           
+        }
+    }
+}
